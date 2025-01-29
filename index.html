@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+
+<body>
+    <input id="input1" type="number" placeholder="Enter a number" />
+    <input id="input2" type="number" placeholder="Enter another number" />
+    <button id="calculate">Calculate</button>
+    <div id="result"></div>
+
+    <script>
+        document.getElementById("calculate").onclick = function () {
+            const num1 = parseFloat(document.getElementById("input1").value);
+            const num2 = parseFloat(document.getElementById("input2").value);
+            document.getElementById("result").innerText = num1 + num2;
+        };
+    </script>
+</body>
+
+</html>
